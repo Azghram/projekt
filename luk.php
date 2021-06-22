@@ -1,37 +1,50 @@
 <?php
-	session_start();
-	
-	if(!isset($_SESSION['logged']))
-	{
-		header('Location: index.php');
-		exit();
-	}
+	include_once 'przedmioty.php'	
 ?>
 
-<!DOCTYPE HTML>
-<html lang="pl">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Tytuł</title>
-</head>
-
-<body>
-
-
-
-	<p>Wybierz typ przedmiotu </p>
+<?php
 	
-	<br /><br />
-	
-	<a href="bron.php">Broń</a> <a href="pancerz.php">Pancerz</a>
-	
-	<br /><br />
-	
-	<a href="przedmioty.php">Powrót</a>
+		require_once "conn.php";
+		
+		mysqli_report(MYSQLI_REPORT_STRICT);
+		
+		try
+		{
+			$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
+			
+			if ($polaczenie->connect_errno!=0)
+			{
+				throw new Exception(mysqli_connect_errno());
+			}	
+			else
+			{
+				$result = $polaczenie->query("SELECT * FROM luki ");
+				$how_many = $result->num_rows;
+				if(!$result)throw new Exception($polaczenie->error);
+				
+				if($how_many>0)
+				{
+					echo "<table><tr><th>Nazwa</th><th>Minimalne obrażenia</th><th>Maksymalne obrażenia</th><th>Minimalna siła</th><th>Minimalna zręczność</th><th>Liczba gniazd</th></tr>";
+					while($row = $result->fetch_assoc()){
+						echo "<tr><td>" . $row["Nazwa"]. "</td><td>" . $row["MIN_DMG"]. "</td><td>" . $row["MAX_DMG"]. "</td><td>" . $row["MIN_STR"].  "</td><td>". $row["MIN_DEX"].  "</td><td>" . $row["Gniazda"].  "</td></tr>";
+					}
+					echo "</table>";
+				}
+				else
+				{
+					echo '<span style="color:red;">Brak wyników</span>';
+				}
+			}
+		}
+		catch(Exception $e)
+		{
+			echo '<span style="color:red;">Błąd serwera, spróbuj później</span>';
+			echo '<br /> Info: '.$e;
+		}
 
+			$polaczenie->close();
+?>
 
-
-
-</body>
-</html>
+<?php
+	include_once 'footer.php'
+?>
