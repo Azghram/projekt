@@ -18,17 +18,19 @@
 
 <body>
 
-<?php
 
-	echo "<p>Witaj ".$_SESSION['name'].'![<a href="logout.php">Wyloguj się!</a>]</p>';
-?>
+
+	<p>Wybierz typ przedmiotu </p>
 	
-	Co chcesz zrobić ?
 	<br /><br />
 	
-	<a href="slowa.php">Wyszukaj słowa runiczne</a>
-	<br />
-	<a href="przedmioty.php">Wyszukaj przedmioty</a>
+	<a href="bron.php">Broń</a> <a href="pancerz.php">Pancerz</a>
+	
+	<br /><br />
+	
+	<a href="main.php">Powrót</a>
+
+
 
 
 </body>

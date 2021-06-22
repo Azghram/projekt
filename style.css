@@ -1,0 +1,80 @@
+body
+{
+	background-color: gray;
+	color: white;
+	
+}
+
+.tile1
+{
+	width: 110px;
+	height: 66px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+}
+
+.tile1:hover
+{
+	background-color: rgb(59, 58, 58);
+}
+
+.tile2
+{
+	width: 110px;
+	height: 66px;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;	
+	font-weight: bold;	
+}
+
+#container
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+#logo
+{
+	background-color: black;
+	color: red;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	padding: 10px;
+}
+#nav
+{
+	float: left;
+	background-color: lightgray;
+	width: 110px;
+	height: 816px;
+	padding: 0 px;
+}
+	
+#content
+{
+	float: left;	
+	padding: 15px;
+	width: 830px;
+}
+	
+#footer
+{
+	clear: both;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+th, td
+{
+	border: 1px solid black;	
+	padding: 5px;
+	text-align: center;	
+}
