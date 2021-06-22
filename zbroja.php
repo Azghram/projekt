@@ -1,5 +1,5 @@
 <?php
-	include_once 'przedmioty.php'	
+	include_once 'inner.php'	
 ?>
 
 <?php
