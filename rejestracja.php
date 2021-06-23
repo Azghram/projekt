@@ -135,7 +135,8 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Tytuł - załóż konto</title>
+	<title>Rejestracja konta</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 	 
 	<style>

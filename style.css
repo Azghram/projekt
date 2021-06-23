@@ -78,3 +78,72 @@ th, td
 	padding: 5px;
 	text-align: center;	
 }
+
+@font-face {
+	font-family: diablo;
+	src: url('fonts/diablo\ heavy.ttf');
+}
+
+.runy
+{
+	width: 160px;
+	height: 40px;
+	font-family: 'diablo';
+	font-size: x-large;
+	background-color: black;
+	border: 1px solid red;	
+	display: flex;
+	justify-content: left;
+	align-items: flex-end;	
+}
+
+.column{
+	float: left;
+  }
+
+.head1{
+	width: 484px;
+	height: 50px;
+	font-family: 'diablo';
+	font-size: xx-large;
+	background-color: black;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#wybor_run
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.z1
+{
+	width: 300px;
+	height: 400px;
+	text-align: center;
+	background-color: rgb(53, 52, 52);
+	border: 1px solid white;
+	font-weight: bold;
+	margin: auto;
+}
+.z2
+{
+	padding: 10px;
+	text-align: center;
+	background-color: rgb(53, 52, 52);
+	border: 1px solid white;
+	margin: auto;
+}
+.z3
+{
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a:link {color: yellow;}
+a:visited {color: black;}
+a:active {color: red;}
