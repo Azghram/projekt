@@ -1,18 +1,22 @@
 <?php
 
 	session_start();
-	
+
 	if(isset($_POST['email']))
 	{
 		$all_OK=true;
 		$nick = $_POST['nick'];
-		
+		//!
+		//!Test
+		//! 
 		if((strlen($nick)<3) || (strlen($nick)>12))
 		{
 			$all_OK=false;
 			$_SESSION['e_nick']="Nazwa użytkownika musi posiadać od 3 do 12 znaków";
 		}
-		
+		//!
+		//! Test
+		//! 
 		if(ctype_alnum($nick)==false)
 		{
 			$all_OK=false;
@@ -47,6 +51,7 @@
 		
 		
 		$haslo_hash = password_hash($haslo1, PASSWORD_DEFAULT);
+
 		
 		if(!isset($_POST['regulamin']))
 		{
