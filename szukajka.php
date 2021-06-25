@@ -10,13 +10,14 @@
 </head>
 
 <?php
+		///Przypisanie do zmiennej wartości checkboxów z formularza
         $wartosci = $_POST['runa'];
 
 		require_once "conn.php";
 		
 		mysqli_report(MYSQLI_REPORT_STRICT);
 		
-		try
+		try///Nawiązanie połączenia z bazą w oparciu o dane z conn.php
 		{
 			$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
 			
@@ -34,7 +35,7 @@
 				$how_many = $result->num_rows;
 				if(!$result)throw new Exception($polaczenie->error);
 				
-				if($how_many>0)
+				if($how_many>0) ///Warunek na liczbę wyników
 				{
 					echo "<table><tr><th>Nazwa</th><th>Wymagane runy</th><th>Opis</th><th>Wymagany przedmiot</th></tr>";
 

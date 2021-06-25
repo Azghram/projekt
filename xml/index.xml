@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="bulawa_8php" kind="file"><name>bulawa.php</name>
+    <member refid="bulawa_8php_1abe4cc9788f52e49485473dc699537388" kind="variable"><name>try</name></member>
+    <member refid="bulawa_8php_1a0ab189fc2be4fc111319729f00c43f9d" kind="variable"><name>else</name></member>
+    <member refid="bulawa_8php_1ac6f88af655e840463bccafcd0a799349" kind="variable"><name>$how_many</name></member>
+  </compound>
+  <compound refid="conn_8php" kind="file"><name>conn.php</name>
+    <member refid="conn_8php_1a711797613cb863ca0756df789c396bf2" kind="variable"><name>$host</name></member>
+    <member refid="conn_8php_1a6a2ff59abacecba75a151826de414a27" kind="variable"><name>$db_user</name></member>
+    <member refid="conn_8php_1a2962c2bda65ca19dd4dd12d7160f1bf8" kind="variable"><name>$db_password</name></member>
+    <member refid="conn_8php_1a26dcb19f4431598ddd5f58147f131bee" kind="variable"><name>$db_name</name></member>
+  </compound>
+  <compound refid="footer_8php" kind="file"><name>footer.php</name>
+  </compound>
+  <compound refid="head_8php" kind="file"><name>head.php</name>
+  </compound>
+  <compound refid="helm_8php" kind="file"><name>helm.php</name>
+    <member refid="helm_8php_1abe4cc9788f52e49485473dc699537388" kind="variable"><name>try</name></member>
+    <member refid="helm_8php_1a0ab189fc2be4fc111319729f00c43f9d" kind="variable"><name>else</name></member>
+    <member refid="helm_8php_1ac6f88af655e840463bccafcd0a799349" kind="variable"><name>$how_many</name></member>
+  </compound>
+  <compound refid="index_8php" kind="file"><name>index.php</name>
+  </compound>
+  <compound refid="inner_8php" kind="file"><name>inner.php</name>
+  </compound>
+  <compound refid="listarun_8php" kind="file"><name>listarun.php</name>
+  </compound>
+  <compound refid="log_8php" kind="file"><name>log.php</name>
+    <member refid="log_8php_1a3cb049243874d4bb6b145ccc30c34de7" kind="variable"><name>if</name></member>
+    <member refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kind="variable"><name>$polaczenie</name></member>
+    <member refid="log_8php_1af1bb580c88de09a70e7168a8f82d1287" kind="variable"><name>else</name></member>
+    <member refid="log_8php_1a77e39440571afe5e168c7fddb5f5c1ca" kind="variable"><name>$haslo</name></member>
+    <member refid="log_8php_1afc31993e855f9631572adfedcfe6f34b" kind="variable"><name>$login</name></member>
+  </compound>
+  <compound refid="logout_8php" kind="file"><name>logout.php</name>
+  </compound>
+  <compound refid="luk_8php" kind="file"><name>luk.php</name>
+    <member refid="luk_8php_1abe4cc9788f52e49485473dc699537388" kind="variable"><name>try</name></member>
+    <member refid="luk_8php_1a0ab189fc2be4fc111319729f00c43f9d" kind="variable"><name>else</name></member>
+    <member refid="luk_8php_1ac6f88af655e840463bccafcd0a799349" kind="variable"><name>$how_many</name></member>
+  </compound>
+  <compound refid="main_8php" kind="file"><name>main.php</name>
+    <member refid="main_8php_1a856fb25f8dbe62157d3f57176501a861" kind="variable"><name>if</name></member>
+  </compound>
+  <compound refid="miecz_8php" kind="file"><name>miecz.php</name>
+    <member refid="miecz_8php_1abe4cc9788f52e49485473dc699537388" kind="variable"><name>try</name></member>
+    <member refid="miecz_8php_1a0ab189fc2be4fc111319729f00c43f9d" kind="variable"><name>else</name></member>
+    <member refid="miecz_8php_1ac6f88af655e840463bccafcd0a799349" kind="variable"><name>$how_many</name></member>
+  </compound>
+  <compound refid="przedmioty_8php" kind="file"><name>przedmioty.php</name>
+  </compound>
+  <compound refid="readme_8md" kind="file"><name>readme.md</name>
+  </compound>
+  <compound refid="rejestracja_8php" kind="file"><name>rejestracja.php</name>
+  </compound>
+  <compound refid="rekawice_8php" kind="file"><name>rekawice.php</name>
+    <member refid="rekawice_8php_1abe4cc9788f52e49485473dc699537388" kind="variable"><name>try</name></member>
+    <member refid="rekawice_8php_1a0ab189fc2be4fc111319729f00c43f9d" kind="variable"><name>else</name></member>
+    <member refid="rekawice_8php_1ac6f88af655e840463bccafcd0a799349" kind="variable"><name>$how_many</name></member>
+  </compound>
+  <compound refid="szukajka_8php" kind="file"><name>szukajka.php</name>
+    <member refid="szukajka_8php_1aafe8caae36967f5bbe3da67d33ef6238" kind="variable"><name>$wartosci</name></member>
+    <member refid="szukajka_8php_1abe4cc9788f52e49485473dc699537388" kind="variable"><name>try</name></member>
+    <member refid="szukajka_8php_1a0ab189fc2be4fc111319729f00c43f9d" kind="variable"><name>else</name></member>
+  </compound>
+  <compound refid="topor_8php" kind="file"><name>topor.php</name>
+    <member refid="topor_8php_1abe4cc9788f52e49485473dc699537388" kind="variable"><name>try</name></member>
+    <member refid="topor_8php_1a0ab189fc2be4fc111319729f00c43f9d" kind="variable"><name>else</name></member>
+    <member refid="topor_8php_1ac6f88af655e840463bccafcd0a799349" kind="variable"><name>$how_many</name></member>
+  </compound>
+  <compound refid="welcome_8php" kind="file"><name>welcome.php</name>
+    <member refid="welcome_8php_1afc4d8aafad3e1a32fa215ab5bb4670f3" kind="variable"><name>else</name></member>
+  </compound>
+  <compound refid="zbroja_8php" kind="file"><name>zbroja.php</name>
+    <member refid="zbroja_8php_1abe4cc9788f52e49485473dc699537388" kind="variable"><name>try</name></member>
+    <member refid="zbroja_8php_1a0ab189fc2be4fc111319729f00c43f9d" kind="variable"><name>else</name></member>
+    <member refid="zbroja_8php_1ac6f88af655e840463bccafcd0a799349" kind="variable"><name>$how_many</name></member>
+  </compound>
+  <compound refid="md_readme" kind="page"><name>md_readme</name>
+  </compound>
+</doxygenindex>

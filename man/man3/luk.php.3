@@ -1,0 +1,48 @@
+.TH "luk.php" 3 "Fri Jun 25 2021" "Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+luk.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "\fBif\fP($polaczenie\->connect_errno!=0) \fBelse\fP"
+.br
+.ti -1c
+.RI "\fB$how_many\fP = $result\->num_rows"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$how_many = $result\->num_rows"
+
+.PP
+Definition at line 22 of file luk\&.php\&.
+.SS "\fBif\fP ( $how_many >0) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+                $result = $polaczenie->query("SELECT * FROM luki ")
+.fi
+.PP
+Definition at line 19 of file luk\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+            $polaczenie = new mysqli($host, $db_user, $db_password, $db_name)
+.fi
+.PP
+Definition at line 11 of file luk\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Project from the source code\&.

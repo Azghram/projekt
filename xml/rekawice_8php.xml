@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="rekawice_8php" kind="file" language="PHP">
+    <compoundname>rekawice.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="rekawice_8php_1abe4cc9788f52e49485473dc699537388" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>try</definition>
+        <argsstring></argsstring>
+        <name>try</name>
+        <initializer>{
+			$polaczenie = new mysqli($host, $db_user, $db_password, $db_name)</initializer>
+        <briefdescription>
+<para>Nawiązanie połączenia z bazą w oparciu o dane z <ref refid="conn_8php" kindref="compound">conn.php</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="rekawice.php" line="11" column="1" bodyfile="rekawice.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rekawice_8php_1a0ab189fc2be4fc111319729f00c43f9d" prot="public" static="no" mutable="no">
+        <type><ref refid="main_8php_1a856fb25f8dbe62157d3f57176501a861" kindref="member">if</ref>($polaczenie-&gt;connect_errno!=0)</type>
+        <definition>if ( $how_many &gt;0) else</definition>
+        <argsstring></argsstring>
+        <name>else</name>
+        <initializer>{
+				$result = $polaczenie-&gt;query(&quot;SELECT * FROM zbroje&quot;)</initializer>
+        <briefdescription>
+<para>Warunek na liczbę wyników. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="rekawice.php" line="19" column="1" bodyfile="rekawice.php" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="rekawice_8php_1ac6f88af655e840463bccafcd0a799349" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$how_many</definition>
+        <argsstring></argsstring>
+        <name>$how_many</name>
+        <initializer>= $result-&gt;num_rows</initializer>
+        <briefdescription>
+<para>Przypisanie zmiennej do liczby wyników zapytania. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="rekawice.php" line="23" column="1" bodyfile="rekawice.php" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>include_once<sp/></highlight><highlight class="stringliteral">&apos;inner.php&apos;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>require_once<sp/></highlight><highlight class="stringliteral">&quot;conn.php&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mysqli_report(MYSQLI_REPORT_STRICT);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11" refid="rekawice_8php_1abe4cc9788f52e49485473dc699537388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>mysqli(<ref refid="conn_8php_1a711797613cb863ca0756df789c396bf2" kindref="member">$host</ref>,<sp/><ref refid="conn_8php_1a6a2ff59abacecba75a151826de414a27" kindref="member">$db_user</ref>,<sp/><ref refid="conn_8php_1a2962c2bda65ca19dd4dd12d7160f1bf8" kindref="member">$db_password</ref>,<sp/><ref refid="conn_8php_1a26dcb19f4431598ddd5f58147f131bee" kindref="member">$db_name</ref>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref>-&gt;connect_errno!=0)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Exception(mysqli_connect_errno());</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19" refid="rekawice_8php_1a0ab189fc2be4fc111319729f00c43f9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$result<sp/>=<sp/><ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref>-&gt;query(</highlight><highlight class="stringliteral">&quot;SELECT<sp/>*<sp/>FROM<sp/>zbroje&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23" refid="rekawice_8php_1ac6f88af655e840463bccafcd0a799349" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="rekawice_8php_1ac6f88af655e840463bccafcd0a799349" kindref="member">$how_many</ref><sp/>=<sp/>$result-&gt;num_rows;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!$result)</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Exception(<ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref>-&gt;error);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="rekawice_8php_1ac6f88af655e840463bccafcd0a799349" kindref="member">$how_many</ref>&gt;0)<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Nazwa&lt;/th&gt;&lt;th&gt;Minimalna<sp/>obrona&lt;/th&gt;&lt;th&gt;Maksymalna<sp/>obrona&lt;/th&gt;&lt;th&gt;Minimalna<sp/>siła&lt;/th&gt;&lt;th&gt;Wytrzymałość&lt;/th&gt;&lt;/tr&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">($row<sp/>=<sp/>$result-&gt;fetch_assoc()){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;&lt;tr&gt;&lt;td&gt;&quot;</highlight><highlight class="normal"><sp/>.<sp/>$row[</highlight><highlight class="stringliteral">&quot;Nazwa&quot;</highlight><highlight class="normal">].<sp/></highlight><highlight class="stringliteral">&quot;&lt;/td&gt;&lt;td&gt;&quot;</highlight><highlight class="normal"><sp/>.<sp/>$row[</highlight><highlight class="stringliteral">&quot;MIN_DEF&quot;</highlight><highlight class="normal">].<sp/></highlight><highlight class="stringliteral">&quot;&lt;/td&gt;&lt;td&gt;&quot;</highlight><highlight class="normal"><sp/>.<sp/>$row[</highlight><highlight class="stringliteral">&quot;MAX_DEF&quot;</highlight><highlight class="normal">].<sp/></highlight><highlight class="stringliteral">&quot;&lt;/td&gt;&lt;td&gt;&quot;</highlight><highlight class="normal"><sp/>.<sp/>$row[</highlight><highlight class="stringliteral">&quot;MIN_STR&quot;</highlight><highlight class="normal">].<sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;/td&gt;&lt;td&gt;&quot;</highlight><highlight class="normal">.<sp/>$row[</highlight><highlight class="stringliteral">&quot;DUR&quot;</highlight><highlight class="normal">].<sp/><sp/></highlight><highlight class="stringliteral">&quot;&lt;/td&gt;&lt;/tr&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;&lt;/table&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/>style=&quot;color:red;&quot;&gt;Brak<sp/>wyników&lt;/span&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(Exception<sp/>$e)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/>style=&quot;color:red;&quot;&gt;Błąd<sp/>serwera,<sp/>spróbuj<sp/>później&lt;/span&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;br<sp/>/&gt;<sp/>Info:<sp/>&apos;</highlight><highlight class="normal">.$e;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref>-&gt;close();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>include_once<sp/></highlight><highlight class="stringliteral">&apos;footer.php&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="rekawice.php"/>
+  </compounddef>
+</doxygen>

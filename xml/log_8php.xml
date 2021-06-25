@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="log_8php" kind="file" language="PHP">
+    <compoundname>log.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="log_8php_1a3cb049243874d4bb6b145ccc30c34de7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>if</definition>
+        <argsstring>((!isset( $_POST[ &apos;login&apos;]))||(!isset( $_POST[ &apos;haslo&apos;])))</argsstring>
+        <name>if</name>
+        <initializer>{
+					echo &apos;&lt;span style=&quot;color:red;&quot;&gt;Brak wyników&lt;/span&gt;&apos;</initializer>
+        <briefdescription>
+<para>Warunek na liczbę wyników. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.php" line="4" column="1" bodyfile="log.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$polaczenie</definition>
+        <argsstring></argsstring>
+        <name>$polaczenie</name>
+        <initializer>= @new mysqli($host, $db_user, $db_password, $db_name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.php" line="12" column="1" bodyfile="log.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="log_8php_1af1bb580c88de09a70e7168a8f82d1287" prot="public" static="no" mutable="no">
+        <type><ref refid="main_8php_1a856fb25f8dbe62157d3f57176501a861" kindref="member">if</ref>($polaczenie-&gt;connect_errno!=0)</type>
+        <definition>if ( $polaczenie-&gt;connect_errno!=0) else</definition>
+        <argsstring></argsstring>
+        <name>else</name>
+        <initializer>{
+		$login = $_POST[&apos;login&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.php" line="18" column="1" bodyfile="log.php" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="log_8php_1a77e39440571afe5e168c7fddb5f5c1ca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$haslo</definition>
+        <argsstring></argsstring>
+        <name>$haslo</name>
+        <initializer>= $_POST[&apos;haslo&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.php" line="21" column="1" bodyfile="log.php" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="log_8php_1afc31993e855f9631572adfedcfe6f34b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$login</definition>
+        <argsstring></argsstring>
+        <name>$login</name>
+        <initializer>= htmlentities($login, ENT_QUOTES, &quot;UTF-8&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="log.php" line="23" column="1" bodyfile="log.php" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>session_start();</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4" refid="log_8php_1a3cb049243874d4bb6b145ccc30c34de7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((!isset($_POST[</highlight><highlight class="stringliteral">&apos;login&apos;</highlight><highlight class="normal">]))<sp/>||<sp/>(!isset($_POST[</highlight><highlight class="stringliteral">&apos;haslo&apos;</highlight><highlight class="normal">])))</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Location:<sp/>index.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>require_once<sp/></highlight><highlight class="stringliteral">&quot;conn.php&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref><sp/>=<sp/>@</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>mysqli(<ref refid="conn_8php_1a711797613cb863ca0756df789c396bf2" kindref="member">$host</ref>,<sp/><ref refid="conn_8php_1a6a2ff59abacecba75a151826de414a27" kindref="member">$db_user</ref>,<sp/><ref refid="conn_8php_1a2962c2bda65ca19dd4dd12d7160f1bf8" kindref="member">$db_password</ref>,<sp/><ref refid="conn_8php_1a26dcb19f4431598ddd5f58147f131bee" kindref="member">$db_name</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref>-&gt;connect_errno!=0)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&quot;Error:<sp/>&quot;</highlight><highlight class="normal">.$polaczenie-&gt;connect_errno;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18" refid="log_8php_1af1bb580c88de09a70e7168a8f82d1287" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="log_8php_1afc31993e855f9631572adfedcfe6f34b" kindref="member">$login</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;login&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="21" refid="log_8php_1a77e39440571afe5e168c7fddb5f5c1ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="log_8php_1a77e39440571afe5e168c7fddb5f5c1ca" kindref="member">$haslo</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;haslo&apos;</highlight><highlight class="normal">];<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="log_8php_1afc31993e855f9631572adfedcfe6f34b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="log_8php_1afc31993e855f9631572adfedcfe6f34b" kindref="member">$login</ref><sp/>=<sp/>htmlentities(<ref refid="log_8php_1afc31993e855f9631572adfedcfe6f34b" kindref="member">$login</ref>,<sp/>ENT_QUOTES,<sp/></highlight><highlight class="stringliteral">&quot;UTF-8&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($result<sp/>=<sp/>@<ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref>-&gt;query(</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(</highlight><highlight class="stringliteral">&quot;SELECT<sp/>*<sp/>FROM<sp/>users<sp/>WHERE<sp/>name=&apos;%s&apos;&quot;</highlight><highlight class="normal">,<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mysqli_real_escape_string(<ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref>,<ref refid="log_8php_1afc31993e855f9631572adfedcfe6f34b" kindref="member">$login</ref>))))</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$liczba_userow<sp/>=<sp/>$result-&gt;num_rows;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($liczba_userow&gt;0)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$wiersz<sp/>=<sp/>$result-&gt;fetch_assoc();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(password_verify(<ref refid="log_8php_1a77e39440571afe5e168c7fddb5f5c1ca" kindref="member">$haslo</ref>,<sp/>$wiersz[</highlight><highlight class="stringliteral">&apos;pass&apos;</highlight><highlight class="normal">]))</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;logged&apos;</highlight><highlight class="normal">]<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$wiersz[</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;name&apos;</highlight><highlight class="normal">]<sp/>=<sp/>$wiersz[</highlight><highlight class="stringliteral">&apos;name&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unset($_SESSION[</highlight><highlight class="stringliteral">&apos;blad&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$result-&gt;close();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Location:<sp/>main.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;blad&apos;</highlight><highlight class="normal">]=<sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/>style=&quot;color:red&quot;&gt;Nieprawidłowy<sp/>login<sp/>lub<sp/>hasło!&lt;/span&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Location:<sp/>index.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;blad&apos;</highlight><highlight class="normal">]=<sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/>style=&quot;color:red&quot;&gt;Nieprawidłowy<sp/>login<sp/>lub<sp/>hasło!&lt;/span&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Location:<sp/>index.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="log_8php_1a8cd3291fe6637f2fa205d6aa84987e5f" kindref="member">$polaczenie</ref>-&gt;close();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="log.php"/>
+  </compounddef>
+</doxygen>

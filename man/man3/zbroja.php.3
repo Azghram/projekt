@@ -1,0 +1,57 @@
+.TH "zbroja.php" 3 "Fri Jun 25 2021" "Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+zbroja.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.RI "Nawiązanie połączenia z bazą w oparciu o dane z \fBconn\&.php\fP\&. "
+.ti -1c
+.RI "\fBif\fP($polaczenie\->connect_errno!=0) \fBelse\fP"
+.br
+.RI "Warunek na liczbę wyników\&. "
+.ti -1c
+.RI "\fB$how_many\fP = $result\->num_rows"
+.br
+.RI "Przypisanie zmiennej do liczby wyników zapytania\&. "
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$how_many = $result\->num_rows"
+
+.PP
+Przypisanie zmiennej do liczby wyników zapytania\&. 
+.PP
+Definition at line 23 of file zbroja\&.php\&.
+.SS "\fBif\fP ( $how_many >0) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+                $result = $polaczenie->query("SELECT * FROM zbroje")
+.fi
+.PP
+Warunek na liczbę wyników\&. 
+.PP
+Definition at line 19 of file zbroja\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+            $polaczenie = new mysqli($host, $db_user, $db_password, $db_name)
+.fi
+.PP
+Nawiązanie połączenia z bazą w oparciu o dane z \fBconn\&.php\fP\&. 
+.PP
+Definition at line 11 of file zbroja\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Project from the source code\&.

@@ -1,7 +1,8 @@
 <?php
 
 	session_start();
-	
+
+	///Warunek sprawdzający czy zmienna sesyjna nie jest ustawiona
 	if(!isset($_SESSION['regcompleted']))
 	{
 		header('Location: index.php');
@@ -19,14 +20,20 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Tytuł</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<title>Pomyślna rejestracja</title>
 </head>
 
 <body>
-	Rejestracja przebiegła pomyślnie. Zaloguj się na swoje konto.<br /><br />
-	
-	<a href="index.php">Zaloguj się</a>
-	<br /><br />
+	<div class="z1">
+		<div class="z2">
+			Rejestracja przebiegła pomyślnie. <br /> Zaloguj się na swoje konto.<br /><br />
+		</div>
+		<div class="z3"></div>
+		<div class="z3">
+		<a href="index.php">Zaloguj się</a>
+		</div>
+	</div>
 
 </body>
 </html>

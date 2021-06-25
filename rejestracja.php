@@ -6,23 +6,18 @@
 	{
 		$all_OK=true;
 		$nick = $_POST['nick'];
-		//!
-		//!Test
-		//! 
-		if((strlen($nick)<3) || (strlen($nick)>12))
+		if((strlen($nick)<3) || (strlen($nick)>12)) ///Przypisanie zmiennej do liczby wyników zapytania
 		{
 			$all_OK=false;
 			$_SESSION['e_nick']="Nazwa użytkownika musi posiadać od 3 do 12 znaków";
 		}
-		//!
-		//! Test
-		//! 
+		///Przypisanie zmiennej do liczby wyników zapytania
 		if(ctype_alnum($nick)==false)
 		{
 			$all_OK=false;
 			$_SESSION['e_nick']="Nazwa użytkownika może składać się tylko z liter i cyfr, bez użycia polskich znaków";
 		}
-		
+
 		$email = $_POST['email'];
 		$emailB = filter_var($email, FILTER_SANITIZE_EMAIL);
 		

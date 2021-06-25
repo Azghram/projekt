@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Projekt: rekawice.php File Reference</title>
+<title>Project: rekawice.php File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Projekt
+   <div id="projectname">Project
    </div>
   </td>
  </tr>
@@ -67,14 +67,19 @@ $(function() {
 <div class="title">rekawice.php File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a href="rekawice_8php_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:abe4cc9788f52e49485473dc699537388"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rekawice_8php.html#abe4cc9788f52e49485473dc699537388">try</a></td></tr>
+<tr class="memdesc:abe4cc9788f52e49485473dc699537388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nawiązanie połączenia z bazą w oparciu o dane z <a class="el" href="conn_8php.html">conn.php</a>.  <a href="rekawice_8php.html#abe4cc9788f52e49485473dc699537388">More...</a><br /></td></tr>
 <tr class="separator:abe4cc9788f52e49485473dc699537388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab189fc2be4fc111319729f00c43f9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main_8php.html#a856fb25f8dbe62157d3f57176501a861">if</a>($polaczenie-&gt;connect_errno!=0)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rekawice_8php.html#a0ab189fc2be4fc111319729f00c43f9d">else</a></td></tr>
+<tr class="memdesc:a0ab189fc2be4fc111319729f00c43f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Warunek na liczbę wyników.  <a href="rekawice_8php.html#a0ab189fc2be4fc111319729f00c43f9d">More...</a><br /></td></tr>
 <tr class="separator:a0ab189fc2be4fc111319729f00c43f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6f88af655e840463bccafcd0a799349"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rekawice_8php.html#ac6f88af655e840463bccafcd0a799349">$how_many</a> = $result-&gt;num_rows</td></tr>
+<tr class="memdesc:ac6f88af655e840463bccafcd0a799349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przypisanie zmiennej do liczby wyników zapytania.  <a href="rekawice_8php.html#ac6f88af655e840463bccafcd0a799349">More...</a><br /></td></tr>
 <tr class="separator:ac6f88af655e840463bccafcd0a799349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -89,6 +94,10 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Przypisanie zmiennej do liczby wyników zapytania. </p>
+
+<p class="definition">Definition at line <a class="el" href="rekawice_8php_source.html#l00023">23</a> of file <a class="el" href="rekawice_8php_source.html">rekawice.php</a>.</p>
 
 </div>
 </div>
@@ -106,6 +115,10 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">                $result = <a class="code" href="log_8php.html#a8cd3291fe6637f2fa205d6aa84987e5f">$polaczenie</a>-&gt;query(<span class="stringliteral">&quot;SELECT * FROM zbroje&quot;</span>)</div>
 </div><!-- fragment -->
+<p>Warunek na liczbę wyników. </p>
+
+<p class="definition">Definition at line <a class="el" href="rekawice_8php_source.html#l00019">19</a> of file <a class="el" href="rekawice_8php_source.html">rekawice.php</a>.</p>
+
 </div>
 </div>
 <a id="abe4cc9788f52e49485473dc699537388"></a>
@@ -122,14 +135,18 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">            <a class="code" href="log_8php.html#a8cd3291fe6637f2fa205d6aa84987e5f">$polaczenie</a> = <span class="keyword">new</span> mysqli(<a class="code" href="conn_8php.html#a711797613cb863ca0756df789c396bf2">$host</a>, <a class="code" href="conn_8php.html#a6a2ff59abacecba75a151826de414a27">$db_user</a>, <a class="code" href="conn_8php.html#a2962c2bda65ca19dd4dd12d7160f1bf8">$db_password</a>, <a class="code" href="conn_8php.html#a26dcb19f4431598ddd5f58147f131bee">$db_name</a>)</div>
 </div><!-- fragment -->
+<p>Nawiązanie połączenia z bazą w oparciu o dane z <a class="el" href="conn_8php.html">conn.php</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="rekawice_8php_source.html#l00011">11</a> of file <a class="el" href="rekawice_8php_source.html">rekawice.php</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="aconn_8php_html_a2962c2bda65ca19dd4dd12d7160f1bf8"><div class="ttname"><a href="conn_8php.html#a2962c2bda65ca19dd4dd12d7160f1bf8">$db_password</a></div><div class="ttdeci">$db_password</div><div class="ttdef"><b>Definition:</b> conn.php:5</div></div>
-<div class="ttc" id="alog_8php_html_a8cd3291fe6637f2fa205d6aa84987e5f"><div class="ttname"><a href="log_8php.html#a8cd3291fe6637f2fa205d6aa84987e5f">$polaczenie</a></div><div class="ttdeci">$polaczenie</div><div class="ttdef"><b>Definition:</b> log.php:12</div></div>
-<div class="ttc" id="aconn_8php_html_a711797613cb863ca0756df789c396bf2"><div class="ttname"><a href="conn_8php.html#a711797613cb863ca0756df789c396bf2">$host</a></div><div class="ttdeci">$host</div><div class="ttdef"><b>Definition:</b> conn.php:3</div></div>
-<div class="ttc" id="aconn_8php_html_a6a2ff59abacecba75a151826de414a27"><div class="ttname"><a href="conn_8php.html#a6a2ff59abacecba75a151826de414a27">$db_user</a></div><div class="ttdeci">$db_user</div><div class="ttdef"><b>Definition:</b> conn.php:4</div></div>
-<div class="ttc" id="aconn_8php_html_a26dcb19f4431598ddd5f58147f131bee"><div class="ttname"><a href="conn_8php.html#a26dcb19f4431598ddd5f58147f131bee">$db_name</a></div><div class="ttdeci">$db_name</div><div class="ttdef"><b>Definition:</b> conn.php:6</div></div>
+<div class="ttc" id="aconn_8php_html_a2962c2bda65ca19dd4dd12d7160f1bf8"><div class="ttname"><a href="conn_8php.html#a2962c2bda65ca19dd4dd12d7160f1bf8">$db_password</a></div><div class="ttdeci">$db_password</div><div class="ttdef"><b>Definition:</b> <a href="conn_8php_source.html#l00005">conn.php:5</a></div></div>
+<div class="ttc" id="alog_8php_html_a8cd3291fe6637f2fa205d6aa84987e5f"><div class="ttname"><a href="log_8php.html#a8cd3291fe6637f2fa205d6aa84987e5f">$polaczenie</a></div><div class="ttdeci">$polaczenie</div><div class="ttdef"><b>Definition:</b> <a href="log_8php_source.html#l00012">log.php:12</a></div></div>
+<div class="ttc" id="aconn_8php_html_a711797613cb863ca0756df789c396bf2"><div class="ttname"><a href="conn_8php.html#a711797613cb863ca0756df789c396bf2">$host</a></div><div class="ttdeci">$host</div><div class="ttdoc">Przypisanie zmiennym danych niezbędnych do połączenia z DB.</div><div class="ttdef"><b>Definition:</b> <a href="conn_8php_source.html#l00003">conn.php:3</a></div></div>
+<div class="ttc" id="aconn_8php_html_a6a2ff59abacecba75a151826de414a27"><div class="ttname"><a href="conn_8php.html#a6a2ff59abacecba75a151826de414a27">$db_user</a></div><div class="ttdeci">$db_user</div><div class="ttdef"><b>Definition:</b> <a href="conn_8php_source.html#l00004">conn.php:4</a></div></div>
+<div class="ttc" id="aconn_8php_html_a26dcb19f4431598ddd5f58147f131bee"><div class="ttname"><a href="conn_8php.html#a26dcb19f4431598ddd5f58147f131bee">$db_name</a></div><div class="ttdeci">$db_name</div><div class="ttdef"><b>Definition:</b> <a href="conn_8php_source.html#l00006">conn.php:6</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

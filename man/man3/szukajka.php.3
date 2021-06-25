@@ -1,0 +1,62 @@
+.TH "szukajka.php" 3 "Fri Jun 25 2021" "Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+szukajka.php
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$wartosci\fP = $_POST['runa']"
+.br
+.RI "Przypisanie do zmiennej wartości checkboxów z formularza\&. "
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.RI "Nawiązanie połączenia z bazą w oparciu o dane z \fBconn\&.php\fP\&. "
+.ti -1c
+.RI "\fBif\fP($polaczenie\->connect_errno!=0) \fBelse\fP"
+.br
+.RI "Warunek na liczbę wyników\&. "
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$wartosci = $_POST['runa']"
+
+.PP
+Przypisanie do zmiennej wartości checkboxów z formularza\&. 
+.PP
+Definition at line 14 of file szukajka\&.php\&.
+.SS "\fBif\fP ( $how_many >0) else"
+\fBInitial value:\fP
+.PP
+.nf
+{   
+                foreach($wartosci as $opcje)
+                {
+                    $result = $polaczenie->query("SELECT * FROM slowa WHERE Runy LIKE '%$opcje%'");
+                }                
+                
+                $how_many = $result->num_rows
+.fi
+.PP
+Warunek na liczbę wyników\&. 
+.PP
+Definition at line 28 of file szukajka\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+            $polaczenie = new mysqli($host, $db_user, $db_password, $db_name)
+.fi
+.PP
+Nawiązanie połączenia z bazą w oparciu o dane z \fBconn\&.php\fP\&. 
+.PP
+Definition at line 20 of file szukajka\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Project from the source code\&.

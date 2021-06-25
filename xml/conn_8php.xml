@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="conn_8php" kind="file" language="PHP">
+    <compoundname>conn.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="conn_8php_1a711797613cb863ca0756df789c396bf2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$host</definition>
+        <argsstring></argsstring>
+        <name>$host</name>
+        <initializer>= &quot;localhost&quot;</initializer>
+        <briefdescription>
+<para>Przypisanie zmiennym danych niezbędnych do połączenia z DB. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conn.php" line="3" column="1" bodyfile="conn.php" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="conn_8php_1a6a2ff59abacecba75a151826de414a27" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$db_user</definition>
+        <argsstring></argsstring>
+        <name>$db_user</name>
+        <initializer>= &quot;root&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conn.php" line="4" column="1" bodyfile="conn.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="conn_8php_1a2962c2bda65ca19dd4dd12d7160f1bf8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$db_password</definition>
+        <argsstring></argsstring>
+        <name>$db_password</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conn.php" line="5" column="1" bodyfile="conn.php" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="conn_8php_1a26dcb19f4431598ddd5f58147f131bee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$db_name</definition>
+        <argsstring></argsstring>
+        <name>$db_name</name>
+        <initializer>= &quot;projekt&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="conn.php" line="6" column="1" bodyfile="conn.php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="3" refid="conn_8php_1a711797613cb863ca0756df789c396bf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="conn_8php_1a711797613cb863ca0756df789c396bf2" kindref="member">$host</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;localhost&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4" refid="conn_8php_1a6a2ff59abacecba75a151826de414a27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="conn_8php_1a6a2ff59abacecba75a151826de414a27" kindref="member">$db_user</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;root&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="5" refid="conn_8php_1a2962c2bda65ca19dd4dd12d7160f1bf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="conn_8php_1a2962c2bda65ca19dd4dd12d7160f1bf8" kindref="member">$db_password</ref><sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6" refid="conn_8php_1a26dcb19f4431598ddd5f58147f131bee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="conn_8php_1a26dcb19f4431598ddd5f58147f131bee" kindref="member">$db_name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;projekt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="conn.php"/>
+  </compounddef>
+</doxygen>

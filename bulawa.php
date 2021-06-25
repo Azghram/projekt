@@ -8,8 +8,9 @@
 		
 		mysqli_report(MYSQLI_REPORT_STRICT);
 		
-		try
+		try ///Nawiązanie połączenia z bazą w oparciu o dane z conn.php
 		{
+			
 			$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
 			
 			if ($polaczenie->connect_errno!=0)
@@ -19,10 +20,11 @@
 			else
 			{
 				$result = $polaczenie->query("SELECT * FROM bulawy ");
-				$how_many = $result->num_rows;
+				///Przypisanie zmiennej do liczby wyników zapytania
+				$how_many = $result->num_rows; 
 				if(!$result)throw new Exception($polaczenie->error);
 				
-				if($how_many>0)
+				if($how_many>0) ///Warunek na liczbę wyników
 				{
 					echo "<table><tr><th>Nazwa</th><th>Minimalne obrażenia</th><th>Maksymalne obrażenia</th><th>Minimalna siła</th><th>Minimalna zręczność</th><th>Liczba gniazd</th></tr>";
 					while($row = $result->fetch_assoc()){
